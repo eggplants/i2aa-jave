@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly VERSION='0.0.1'
+readonly VERSION='1.0.0'
 readonly JAVEPATH='/usr/local/src/jave5/jave5.jar'
 
 command -v java >/dev/null || {
@@ -11,7 +11,7 @@ command -v java >/dev/null || {
 [ -f "$JAVEPATH" ] || {
   echo 'Please install JavE5:
     $ wget http://www.jave.de/download/jave5.zip
-    $ unzip jave5.zip -d /usr/local/src/jave5' >&2
+    $ sudo unzip jave5.zip -d /usr/local/src/jave5' >&2
   exit 1
 }
 
@@ -23,7 +23,7 @@ _usage(){
 echo 'JavE commadline interface.
 
 Supported syntax:
-  i2a INPUTFILE [-w|--width width] [-a|--algorithm algorithm] [-h|--help] [-v|--version]
+  i2aa INPUTFILE [-w|--width width] [-a|--algorithm algorithm] [-h|--help] [-v|--version]
     INPUTFILE is the name (and path) to the gif/jpg image)
     width     is the width in characters of the result.
               The default value is 72.

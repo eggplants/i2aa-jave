@@ -1,15 +1,30 @@
-# `i2a`
+# `i2aa`
 
 - CLI for [JavE5](http://www.jave.de/)
+- Convert an image to texts of ascii art
+
+## Install
+
+- Setup JavE5
+
+```bash
+wget http://www.jave.de/download/jave5.zip
+sudo unzip jave5.zip -d /usr/local/src/jave5
+```
+
+```bash
+git clone --depth 1 https://github.com/eggplants/i2aa-jave && cd i2aa-jave
+sudo install -m 0755 i2aa.sh /usr/local/bin/i2aa
+```
 
 ## Usage
 
 ```bash
-$ i2a --help
+$ i2aa --help
 JavE commadline interface.
 
 Supported syntax:
-  i2a INPUTFILE [-w|--width width] [-a|--algorithm algorithm] [-h|--help] [-v|--version]
+  i2aa INPUTFILE [-w|--width width] [-a|--algorithm algorithm] [-h|--help] [-v|--version]
     INPUTFILE is the name (and path) to the gif/jpg image)
     width     is the width in characters of the result.
               The default value is 72.
@@ -18,7 +33,7 @@ Supported syntax:
                  1 (Pixel per Character)
                  4 (Pixels per Character) (default)
 $ convert wizard: wiz.png
-$ i2a wiz.png -w 30
+$ i2aa wiz.png -w 30
 
 
     ...
@@ -39,17 +54,4 @@ $ i2a wiz.png -w 30
         +    `       7
 
 
-```
-
-## Install
-
-- Setup JavE5
-
-```bash
-wget http://www.jave.de/download/jave5.zip && unzip jave5.zip -d /usr/local/src/jave5
-```
-
-```bash
-$ git clone --depth 1 https://github.com/eggplants/i2a && cd i2a
-$ sudo install -m 0755 i2a.sh /usr/local/bin/i2a
 ```
