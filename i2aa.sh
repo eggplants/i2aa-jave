@@ -67,7 +67,7 @@ main(){
         exit 0
         ;;
       -v | --version)
-        echo "i2a v$VERSION"
+        echo "i2aa v$VERSION"
         exit 1
         ;;
       --)
