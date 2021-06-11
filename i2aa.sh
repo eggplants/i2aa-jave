@@ -20,7 +20,7 @@ ALGORITHM='4'
 
 _usage(){
 
-echo 'JavE commadline interface.
+echo 'JavE commandline interface.
 
 Supported syntax:
   i2aa INPUTFILE [-w|--width width] [-a|--algorithm algorithm] [-h|--help] [-v|--version]
