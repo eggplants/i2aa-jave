@@ -21,7 +21,7 @@ sudo install -m 0755 i2aa.sh /usr/local/bin/i2aa
 
 ```bash
 $ i2aa --help
-JavE commadline interface.
+JavE commandline interface.
 
 Supported syntax:
   i2aa INPUTFILE [-w|--width width] [-a|--algorithm algorithm] [-h|--help] [-v|--version]
